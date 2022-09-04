@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a106da2ba7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+<div class="container">
+<div class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="img/logo.png" width="125px"></a>
+  </div>
+  <nav>
+    <ul id="MenuItems">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Product</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contace</a></li>
+      <li><a href="account.html">Account</a></li>
+    </ul>
+  </nav>
+  <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+    <img src="img/menu.png" class="menu-icon" onclick="menutoggle()" alt="">
+</div>
+</div>
+
+
+<div class="account-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <img src="img/image1.png" width="100%" alt="">
+      </div>
+          <div class="col-2">
+            <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="Indicator">
+                </div>
+                <form id="logform">
+                   <input type="text" placeholder="Username">
+                   <input type="password" placeholder="Password">
+                   <button type="submit" class="buttons">Login</button>
+                   <a href="#">Forgot password</a>
+                </form>
+                <form id="regform">
+                   <input type="text" placeholder="Username">
+                   <input type="email" placeholder="Email">
+                   <input type="password" placeholder="Password">
+                   <button type="submit" class="buttons">Register</button>
+                </form>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="img/play-store.png" alt="">
+            <img src="img/app-store.png" alt="">
+
+          </div>
+      </div>
+      <div class="footer-col-2">
+        <img src="img/logo-white.png" alt="">
+      <p>Our Purpose Is To sustainably Make the Pleasoure and <br> Benefits of Sporis Accessible to the Many.</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog Post</li>
+          <li>Betura Policy</li>
+          <li>Join Affiliate</li>
+        </ul>
+      </div>
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php">Facebook</a></li>
+          <li><a href="https://twitter.com/RahulAl93179341">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/rahul-ali-100649/">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">copyright 2021 - Learndailyteam</p>
+  </div>
+</div>
+<script type="text/javascript" src="index.js">
+
+</script>
+<script>
+
+var logform = document.getElementById("logform");
+var regform = document.getElementById("regform");
+var Indicator = document.getElementById("Indicator");
+function register() {
+  regform.style.transform = "translateX(0px)";
+  logform.style.transform = "translateX(0px)";
+  Indicator.style.transform = "translateX(100px)";
+}
+
+function login() {
+  regform.style.transform = "translateX(300px)";
+  logform.style.transform = "translateX(300px)";
+  Indicator.style.transform = "translateX(0px)";
+}
+
+</script>
+  </body>
+</html>
